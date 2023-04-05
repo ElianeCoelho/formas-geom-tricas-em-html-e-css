@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formas Geométricas</title>
+  <style>
+    
+    h1{
+      text-align: center;
+    }
+.quadrado {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position:center;
+}
+.retangulo {
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid yellow;
+  border-left: 50px solid rgb(66, 76, 66);
+  /* para deixar transparête aparecendo 
+  só o trângulo, muda-se de solid-cor para solid transparente*/
+}
+.trianguloDois {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid orangered;
+  /* para deixar transparête aparecendo 
+  só o trângulo, muda-se de solid-cor para solid transparente*/
+}
+.circulo {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+}
+.hexagono {
+  width: 80px;
+  height: 45px;
+  background-color: purple;
+  position: relative;
+  margin: 25px auto;
+}
+.hexagono:before, .hexagono:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.hexagono:before {
+  bottom: 100%;
+  border-bottom: 22px solid purple;
+}
+
+.hexagono:after {
+  top: 100%;
+  width: 0;
+  border-top: 22px solid purple;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Formas Gométricas</h1>
+  <h2>Quadrado</h2>
+  <div class="quadrado"></div>
+  <h2>retângulo</h2>
+  <div class="retangulo"></div>
+  <h2>triângulo</h2>
+  <div class="triangulo"></div>
+  <h2>triângulo Dois</h2>
+  <div class="trianguloDois"></div>
+  <h2>Círculo</h2>
+  <div class="circulo"></div>
+  <h2>Hexágono</h2>
+  <div class="hexagono"></div>
+</body>
+</html>
+
